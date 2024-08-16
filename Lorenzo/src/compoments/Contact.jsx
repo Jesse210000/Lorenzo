@@ -57,7 +57,7 @@ const Contact = () => {
           className="mt-12 text-center max-w-lg"
           variants={fadeInVariant}
         >
-          <p className="text-lg">Or reach out to us directly at:</p>
+          <p className="text-lg">Reach out to us directly at:</p>
           <p className="text-2xl font-bold mt-4 text-white">Masonmatthewling@gmail.com</p>
           <motion.button
             className="mt-8 px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-bold rounded-lg focus:outline-none transition duration-300"

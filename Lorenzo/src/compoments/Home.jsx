@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import Navbar from '../compoments/NavBar';    
 import ryanScottImage from '../assets/img/Mason.jpg';
 
@@ -32,16 +33,21 @@ const Home = () => {
             >
               Discover the incredible powers of the mind.
             </motion.p>
-            <motion.button 
-              className="mt-8 px-6 py-3 bg-red-500 text-white font-bold rounded"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
+            <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.6 }}
             >
-              learn more
-            </motion.button>
+              <Link to="/about">
+                <motion.button 
+                  className="mt-8 px-6 py-3 bg-red-500 text-white font-bold rounded"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  Learn More
+                </motion.button>
+              </Link>
+            </motion.div>
           </motion.div>
 
           <motion.div 
