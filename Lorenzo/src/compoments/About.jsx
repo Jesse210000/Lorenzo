@@ -46,6 +46,7 @@ const About = () => {
           >
             I can make that happen...
           </motion.p>
+          <br />
           <motion.p 
             className="text-xl mb-4"
             initial={{ opacity: 0 }}
